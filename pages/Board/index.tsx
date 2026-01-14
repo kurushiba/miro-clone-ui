@@ -1,5 +1,5 @@
 import { RiStickyNoteFill, RiText, RiImageFill } from 'react-icons/ri';
-import { Header } from '../../components/Header';
+import Header from '../../components/Header';
 import { Canvas } from '../../components/Canvas';
 import './Board.css';
 
