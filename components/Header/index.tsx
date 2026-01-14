@@ -1,9 +1,8 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { RiUser3Line, RiLogoutBoxRLine } from 'react-icons/ri';
 import './Header.css';
 
-export const Header: React.FC = () => {
+export default function Header() {
   const title = 'Board Title';
   const currentUser = { name: 'Demo User' };
 
@@ -13,7 +12,7 @@ export const Header: React.FC = () => {
         <Link to="" className="common-header__logo">
           Miro Clone
         </Link>
-        <div className="common-header__divider"></div>
+        <div className="common-header__divider" />
         <h1 className="common-header__title">{title}</h1>
       </div>
       <div className="common-header__right">
@@ -27,4 +26,4 @@ export const Header: React.FC = () => {
       </div>
     </header>
   );
-};
+}
