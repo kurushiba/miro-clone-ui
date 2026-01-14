@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { RiDashboardLine, RiAddLine, RiDeleteBinLine } from 'react-icons/ri';
 import CreateBoardModal from '../../components/CreateBoardModal';
-import { Header } from '../../components/Header';
+import Header from '../../components/Header';
 import './BoardList.css';
 
 export default function BoardList() {
