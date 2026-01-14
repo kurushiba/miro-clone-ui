@@ -13,7 +13,7 @@ export default function CreateBoardModal() {
         キャンセル
       </button>
       <Button className="btn btn-primary" disabled={submitting || !name.trim()}>
-        {submitting ? '作成中...' : '作成'}
+        作成
       </Button>
     </>
   );
