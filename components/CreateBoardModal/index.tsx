@@ -1,3 +1,4 @@
+import Button from '../ui/Button';
 import Modal from '../ui/Modal';
 import './CreateBoardModal.css';
 
@@ -11,9 +12,9 @@ export default function CreateBoardModal() {
       <button className="btn btn-secondary" disabled={submitting}>
         キャンセル
       </button>
-      <button className="btn btn-primary" disabled={submitting || !name.trim()}>
+      <Button className="btn btn-primary" disabled={submitting || !name.trim()}>
         {submitting ? '作成中...' : '作成'}
-      </button>
+      </Button>
     </>
   );
 
