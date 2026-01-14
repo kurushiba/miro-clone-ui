@@ -1,8 +1,7 @@
-import React from 'react';
-import { DraggableObject } from '../DraggableObject';
+import DraggableObject from '../DraggableObject';
 import './ImageObject.css';
 
-export const ImageObject: React.FC = () => {
+export default function ImageObject() {
   const content = 'https://placehold.co/200x200';
   const width = 200;
   const height = 200;
@@ -38,4 +37,4 @@ export const ImageObject: React.FC = () => {
       </div>
     </DraggableObject>
   );
-};
+}

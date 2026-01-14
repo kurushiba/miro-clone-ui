@@ -1,4 +1,3 @@
-import React from 'react';
 import { RiDeleteBinLine } from 'react-icons/ri';
 import './ContextToolbar.css';
 
@@ -10,7 +9,7 @@ const COLORS = [
   { name: 'Orange', value: '#FED7AA' },
 ];
 
-export const ContextToolbar: React.FC = () => {
+export default function ContextToolbar() {
   const x = 100;
   const y = 300;
   const color = '#FEF3C7';
@@ -48,4 +47,4 @@ export const ContextToolbar: React.FC = () => {
       </button>
     </div>
   );
-};
+}

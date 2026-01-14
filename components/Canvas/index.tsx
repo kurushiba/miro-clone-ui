@@ -1,12 +1,11 @@
-import React from 'react';
 import { RiZoomInLine, RiZoomOutLine } from 'react-icons/ri';
-import { StickyNote } from '../StickyNote';
-import { TextObject } from '../TextObject';
-import { ImageObject } from '../ImageObject';
-import { ContextToolbar } from '../ContextToolbar';
+import StickyNote from '../StickyNote';
+import TextObject from '../TextObject';
+import ImageObject from '../ImageObject';
+import ContextToolbar from '../ContextToolbar';
 import './Canvas.css';
 
-export const Canvas: React.FC = () => {
+export default function Canvas() {
   const scale = 1.0;
   const offset = { x: 0, y: 0 };
   const showToolbar = false;
@@ -44,4 +43,4 @@ export const Canvas: React.FC = () => {
       </div>
     </div>
   );
-};
+}

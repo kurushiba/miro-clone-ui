@@ -1,8 +1,7 @@
-import React from 'react';
-import { DraggableObject } from '../DraggableObject';
+import DraggableObject from '../DraggableObject';
 import './TextObject.css';
 
-export const TextObject: React.FC = () => {
+export default function TextObject() {
   const content = 'Sample Text Object';
   const width = 200;
   const isSelected = false;
@@ -34,4 +33,4 @@ export const TextObject: React.FC = () => {
       </div>
     </DraggableObject>
   );
-};
+}

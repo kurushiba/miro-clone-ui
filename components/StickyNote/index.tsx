@@ -1,8 +1,7 @@
-import React from 'react';
-import { DraggableObject } from '../DraggableObject';
+import DraggableObject from '../DraggableObject';
 import './StickyNote.css';
 
-export const StickyNote: React.FC = () => {
+export default function StickyNote() {
   const width = 200;
   const height = 200;
   const color = 'var(--sticky-yellow)';
@@ -38,4 +37,4 @@ export const StickyNote: React.FC = () => {
       </div>
     </DraggableObject>
   );
-};
+}

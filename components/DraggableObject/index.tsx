@@ -1,4 +1,3 @@
-import React from 'react';
 import './DraggableObject.css';
 
 interface DraggableObjectProps {
@@ -7,11 +6,11 @@ interface DraggableObjectProps {
   className?: string;
 }
 
-export const DraggableObject: React.FC<DraggableObjectProps> = ({
+export default function DraggableObject({
   children,
   style,
   className,
-}) => {
+}: DraggableObjectProps) {
   return (
     <div
       style={style}
@@ -20,4 +19,4 @@ export const DraggableObject: React.FC<DraggableObjectProps> = ({
       {children}
     </div>
   );
-};
+}

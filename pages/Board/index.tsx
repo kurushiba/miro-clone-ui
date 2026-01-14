@@ -1,9 +1,9 @@
 import { RiStickyNoteFill, RiText, RiImageFill } from 'react-icons/ri';
 import Header from '../../components/Header';
-import { Canvas } from '../../components/Canvas';
+import Canvas from '../../components/Canvas';
 import './Board.css';
 
-const Board: React.FC = () => {
+export default function Board() {
   return (
     <div className="board-page">
       <Header />
@@ -30,6 +30,4 @@ const Board: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default Board;
+}
