@@ -25,7 +25,8 @@
 
 .text-object__textarea {
   width: 100%;
-  height: 100%;
+  height: auto;
+  field-sizing: content;
   resize: none;
   border: none;
   outline: none;
